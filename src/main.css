@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.rodal-dialog {
+  overflow-y: scroll;
+}
+
+th {
+  cursor: pointer;
+}
+
+
+.my_box{
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  border-radius: 10px;
+}
