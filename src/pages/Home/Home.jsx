@@ -14,17 +14,19 @@ const Home = (props) => {
     <>
       <div className="p-3">
         {props.isLoading ? (
-          <div className="flex gap-4 justify-center mt-5 flex-wrap">
+          <div className="mt-5 flex myBox gap-4">
+            <CustomCard />
             <CustomCard />
             <CustomCard />
             <CustomCard />
             <CustomCard />
           </div>
         ) : (
-          <div className="grid mt-5 grid-cols-2 sm:grid-cols-4">
+          <div className="mt-5 w-full flex myBox gap-4">
             {props.product.map((itm, index) => (
-              <div>
+              <div className="w-1/5 myWidth">
                 <Card
+                  className="myWidth my"
                   shadow="sm"
                   key={index}
                   isPressable
@@ -35,8 +37,8 @@ const Home = (props) => {
                       shadow="sm"
                       radius="lg"
                       width="100%"
-                      alt={itm.title}
-                      className="w-full object-cover h-[140px]"
+                      alt={itm.name}
+                      className="w-full myWidth object-cover h-[240px]"
                       src={itm.img}
                     />
                   </CardBody>

@@ -6,14 +6,14 @@
   overflow-y: scroll;
 }
 
-th {
-  cursor: pointer;
-}
+@media (max-width: 500px) {
+  .myBox {
+    flex-direction: column;
+    align-items: center;
+  }
 
-
-.my_box{
-  width: 200px;
-  height: 200px;
-  background-color: black;
-  border-radius: 10px;
+  .myWidth {
+    width: 100%;
+    min-height: 400px;
+  }
 }

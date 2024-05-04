@@ -3,7 +3,7 @@ import React from "react";
 
 const CustomCard = () => {
   return (
-    <Card className="w-1/6 h-80 space-y-5 p-4" radius="lg">
+    <Card className="w-1/5 myWidth h-80 space-y-5 p-4" radius="lg">
       <Skeleton className="rounded-lg">
         <div className="h-48 rounded-lg bg-default-300"></div>
       </Skeleton>
